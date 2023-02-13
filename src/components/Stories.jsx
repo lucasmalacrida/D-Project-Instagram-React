@@ -1,70 +1,45 @@
+import Story from "./Story";
+
 export default function Stories() {
+    const stories = [
+        {
+            name: "9gag",
+            image: "../../assets/pics/9gag.jpeg"
+        },
+        {
+            name: "meowed",
+            image: "../../assets/pics/meowed.jpeg"
+        },
+        {
+            name: "barked",
+            image: "../../assets/pics/barked.jpeg"
+        },
+        {
+            name: "nathanwpyle...",
+            image: "../../assets/pics/nathan.jpeg"
+        },
+        {
+            name: "wawawiwac...",
+            image: "../../assets/pics/wawa.jpeg"
+        },
+        {
+            name: "respondeai",
+            image: "../../assets/pics/respondeai.jpeg"
+        },
+        {
+            name: "filomoderna",
+            image: "../../assets/pics/filosofia.jpeg"
+        },
+        {
+            name: "memeriago...",
+            image: "../../assets/pics/memeriago.jpeg"
+        }
+    ];
+
     return (
         <div class="stories">
             <div class="stories-overflow">
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/9gag.jpeg" />
-                    </div>
-                    <h4>9gag</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/meowed.jpeg" />
-                    </div>
-                    <h4>meowed</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/barked.jpeg" />
-                    </div>
-                    <h4>barked</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/nathan.jpeg" />
-                    </div>
-                    <h4>nathanwpyle...</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/wawa.jpeg" />
-                    </div>
-                    <h4>wawawiwac...</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/respondeai.jpeg" />
-                    </div>
-                    <h4>respondeai</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/filosofia.jpeg" />
-                    </div>
-                    <h4>filomoderna</h4>
-                </div>
-
-                <div class="story">
-                    <div class="box-story-pic">
-                        <img class="story-ring" src="../../assets/stories_background.jpg" />
-                        <img class="story-pic pic-big" src="../../assets/pics/memeriago.jpeg" />
-                    </div>
-                    <h4>memeriago...</h4>
-                </div>
+                {stories.map( s => <Story name={s.name} image={s.image} />)}
             </div>
 
             <ion-icon id="stories-arrow" name="chevron-forward-circle"></ion-icon>

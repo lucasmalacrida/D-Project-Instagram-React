@@ -72,10 +72,6 @@ ion-icon:hover, .see-all:hover, .pic-big:hover, .pic-medium:hover, .pic-small:ho
     cursor: pointer;
 }
 
-.heart:hover {
-    color: red;
-}
-
 body {
     font-family: "Roboto";
     background-color: #FAFAFA;

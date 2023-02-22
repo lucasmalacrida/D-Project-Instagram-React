@@ -1,7 +1,7 @@
 export default function Lowerbar(){
     return (
-        <div class="bigger-lower-bar">
-            <div class="lower-bar">
+        <div className="bigger-lower-bar">
+            <div className="lower-bar">
                 <ion-icon name="home"></ion-icon>
                 <ion-icon name="search-outline"></ion-icon>
                 <ion-icon name="add-circle-outline"></ion-icon>

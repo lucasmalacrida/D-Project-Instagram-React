@@ -3,8 +3,8 @@ import stories from "../data/stories"
 
 export default function Stories() {
     return (
-        <div class="stories">
-            <div class="stories-overflow">
+        <div className="stories">
+            <div className="stories-overflow">
                 {stories.map(s => <Story name={s.name} image={s.image} />)}
             </div>
 

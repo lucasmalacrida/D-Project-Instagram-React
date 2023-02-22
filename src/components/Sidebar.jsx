@@ -3,8 +3,8 @@ import Sugestoes from "./Sugestoes";
 
 export default function Sidebar() {
     return (
-        <div class="bigger-sidebar">
-            <div class="sidebar">
+        <div className="bigger-sidebar">
+            <div className="sidebar">
                 <Usuario />
                 <Sugestoes />
             </div>

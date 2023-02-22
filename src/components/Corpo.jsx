@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar";
 
 export default function Corpo() {
     return (
-        <div class="container-content">
-            <div class="container-main">
+        <div className="container-content">
+            <div className="container-main">
                 <Stories />
                 
                 <Posts />

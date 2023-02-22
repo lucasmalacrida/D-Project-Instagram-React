@@ -26,7 +26,7 @@ export default function Post(props) {
                 <h1>{props.userName}</h1>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
-            <img className="post-img" src={props.postImage} onClick={likedPost? null : likePost} data-test="post-image" />
+            <img className="post-img" src={props.postImage} onDoubleClick={likedPost? null : likePost} data-test="post-image" />
             <div className="post-options">
                 <ion-icon name={likedPost? "heart" : "heart-outline"} style={likedPost? {color: "#FE3140"} : {}} onClick={likePost} data-test="like-post"></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>

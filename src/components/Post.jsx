@@ -19,6 +19,15 @@ export default function Post(props) {
         savedPost? setSavedPost(false) : setSavedPost(true);
     }
 
+    function likeOnImg(event) {
+        let likeIconTag = event.target.parentNode.lastElementChild;
+        likeIconTag.classList.remove("hidden");
+        setTimeout(() => {likeIconTag.classList.add("hidden");likeIconTag.classList.remove("like-animation")}, 500);
+        setTimeout(() => {likeIconTag.classList.add("like-animation")}, 0);
+
+        if (!likedPost) {likePost()}
+    }
+
     return (
         <div className="post" data-test="post">
             <div className="post-header">
@@ -26,7 +35,10 @@ export default function Post(props) {
                 <h1>{props.userName}</h1>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
-            <img className="post-img" src={props.postImage} onDoubleClick={likedPost? null : likePost} data-test="post-image" />
+            <div className="container-img">
+                <img className="post-img" src={props.postImage} onDoubleClick={likeOnImg} data-test="post-image" />
+                <ion-icon name="heart" class="like-on-img hidden"></ion-icon>
+            </div>
             <div className="post-options">
                 <ion-icon name={likedPost? "heart" : "heart-outline"} style={likedPost? {color: "#FE3140"} : {}} onClick={likePost} data-test="like-post"></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>

@@ -68,8 +68,12 @@ h4 {
     border-radius: 100%;
 }
 
-ion-icon:hover, .see-all:hover, .pic-big:hover, .pic-medium:hover, .pic-small:hover, .footer:hover, h1:hover, b:hover {
+ion-icon:hover, .see-all:hover, .pic-big:hover, .pic-medium:hover, .pic-small:hover, .footer:hover, h1:hover, b:hover, .post-img {
     cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
 }
 
 body {
@@ -345,6 +349,25 @@ body {
     text-align: center;
     width: 612px;
     height: 612px;
+}
+
+.container-img {
+    position: relative;
+}
+
+.like-on-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 50px;
+    transition: font-size 0.3s ease-in;
+}
+
+.like-animation {
+    font-size: 150px;
 }
 
 .post-options {

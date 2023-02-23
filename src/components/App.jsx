@@ -4,12 +4,12 @@ import Lowerbar from "./Lowerbar"
 
 export default function App() {
     return (
-        <div>
+        <>
             <Navbar />
 
             <Corpo />
             
             <Lowerbar />
-        </div>
+        </>
     );
 }

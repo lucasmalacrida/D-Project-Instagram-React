@@ -5,9 +5,17 @@ export default function Posts() {
     return (
         <div className="posts">
             {posts.map( p => <Post
-            userName={p.userName} userPic={p.userPic} postImage={p.postImage}
-            likerName={p.likerName} likerPic={p.likerPic} numLikes={p.numLikes} postCaption={p.postCaption}
-            numComments={p.numComments} commentator={p.commentator} comment={p.comment}
+            key={p.postImage}
+            userName={p.userName}
+            userPic={p.userPic}
+            postImage={p.postImage}
+            likerName={p.likerName}
+            likerPic={p.likerPic}
+            numLikes={p.numLikes}
+            postCaption={p.postCaption}
+            numComments={p.numComments}
+            commentator={p.commentator}
+            comment={p.comment}
             />)}
         </div>
     )

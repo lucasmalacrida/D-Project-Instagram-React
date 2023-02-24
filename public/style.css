@@ -197,13 +197,14 @@ body {
 
 .profile {
     margin-left: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.profile > ion-icon {
-    color: #33363F;
+.profile-name {
+    display: flex;
+}
+
+.profile-name > ion-icon {
+    color: #8E8E8E;
     font-size: 16px;
     margin-left: 5px;
 }
@@ -363,7 +364,7 @@ body {
 
     color: white;
     font-size: 50px;
-    transition: font-size 0.3s ease-in;
+    transition: font-size 0.3s ease;
 }
 
 .like-animation {

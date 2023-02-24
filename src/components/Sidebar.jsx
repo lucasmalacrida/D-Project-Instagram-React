@@ -5,7 +5,7 @@ export default function Sidebar() {
     return (
         <div className="bigger-sidebar">
             <div className="sidebar">
-                <Usuario />
+                <Usuario userName="catanacomics" profileName="Catana" profilePic="../../assets/pics/catana.jpeg" />
                 <Sugestoes />
             </div>
         </div>

@@ -11,7 +11,7 @@ export default function Posts() {
             postImage={p.postImage}
             likerName={p.likerName}
             likerPic={p.likerPic}
-            numLikes={p.numLikes}
+            initialNumLikes={p.initialNumLikes}
             postCaption={p.postCaption}
             numComments={p.numComments}
             commentator={p.commentator}

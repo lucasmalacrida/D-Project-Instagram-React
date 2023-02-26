@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 export default function Navbar(){
     return (
         <div className="bigger-header">
@@ -5,7 +7,7 @@ export default function Navbar(){
                 <div className="header-logo">
                     <a href="https://instagram.com/"><ion-icon name="logo-instagram" id="logo-insta"></ion-icon></a>
                     <div className="border-y"></div>
-                    <a href="https://instagram.com/"><img src="../../assets/logo.png" /></a>
+                    <a href="https://instagram.com/"><img src={logo} /></a>
                     <a href="https://instagram.com/" id="dm-mobile"><ion-icon name="paper-plane-outline"></ion-icon></a>
                 </div>
 

@@ -68,7 +68,7 @@ h4 {
     border-radius: 100%;
 }
 
-ion-icon:hover, .see-all:hover, .pic-big:hover, .pic-medium:hover, .pic-small:hover, .footer:hover, h1:hover, b:hover, .post-img {
+ion-icon, .see-all, .pic-big, .pic-medium, .pic-small, .footer, h1, b, .post-img, .follow {
     cursor: pointer;
 }
 
@@ -229,10 +229,6 @@ body {
 
 .follow {
     color: #139EF2;
-}
-
-.follow:hover {
-    cursor: pointer;
 }
 
 .footer, .copyright {

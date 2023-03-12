@@ -1,10 +1,20 @@
+import catpic from "../assets/pics/meowed.jpeg";
+import dogpic from "../assets/pics/barked.jpeg";
+import natgeopic from "../assets/pics/natgeo.jpg";
+import respondeaipic from "../assets/pics/respondeai.jpeg";
+
+import catpost from "../assets/posts/gato-telefone.jpeg";
+import dogpost from "../assets/posts/dog.jpeg";
+import natgeopost from "../assets/posts/natgeopost.jpg";
+
+
 const posts = [
     {
         userName: "meowed",
-        userPic: "./assets/pics/meowed.jpeg",
-        postImage: "./assets/posts/gato-telefone.jpeg",
+        userPic: catpic,
+        postImage: catpost,
         likerName: "respondeai",
-        likerPic: "./assets/pics/respondeai.jpeg",
+        likerPic: respondeaipic,
         initialNumLikes: 101523,
         postCaption: "meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
         numComments: 1256,
@@ -13,10 +23,10 @@ const posts = [
     },
     {
         userName: "barked",
-        userPic: "./assets/pics/barked.jpeg",
-        postImage: "./assets/posts/dog.jpeg",
+        userPic: dogpic,
+        postImage: dogpost,
         likerName: "respondeai",
-        likerPic: "./assets/pics/respondeai.jpeg",
+        likerPic: respondeaipic,
         initialNumLikes: 95532,
         postCaption: "auauauuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
         numComments: 1124,
@@ -25,10 +35,10 @@ const posts = [
     },
     {
         userName: "natgeo",
-        userPic: "./assets/pics/natgeo.jpg",
-        postImage: "./assets/posts/natgeopost.png",
+        userPic: natgeopic,
+        postImage: natgeopost,
         likerName: "respondeai",
-        likerPic: "./assets/pics/respondeai.jpeg",
+        likerPic: respondeaipic,
         initialNumLikes: 154123,
         postCaption: "wooooowwwwwwwwwwwwwwwwwwwwwwwww",
         numComments: 2847,

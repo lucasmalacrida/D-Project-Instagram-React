@@ -8,7 +8,7 @@ import dogpost from "../assets/posts/dog.jpeg";
 import natgeopost from "../assets/posts/natgeopost.jpg";
 
 
-const posts = [
+const initialPosts = [
     {
         userName: "meowed",
         userPic: catpic,
@@ -18,8 +18,12 @@ const posts = [
         initialNumLikes: 101523,
         postCaption: "meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
         numComments: 1256,
-        commentator: "barked",
-        comment: "auauauuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
+        comments: [
+            {
+                author: "barked",
+                comment: "auauauuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
+            }
+        ]
     },
     {
         userName: "barked",
@@ -30,8 +34,12 @@ const posts = [
         initialNumLikes: 95532,
         postCaption: "auauauuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
         numComments: 1124,
-        commentator: "meowed",
-        comment: "meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+        comments: [
+            {
+                author: "meowed",
+                comment: "meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+        ]
     },
     {
         userName: "natgeo",
@@ -42,9 +50,13 @@ const posts = [
         initialNumLikes: 154123,
         postCaption: "wooooowwwwwwwwwwwwwwwwwwwwwwwww",
         numComments: 2847,
-        commentator: "meowed",
-        comment: "meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+        comments: [
+            {
+                author: "meowed",
+                comment: "meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+        ]
     }
 ];
 
-export default posts;
+export default initialPosts;

@@ -1,5 +1,5 @@
 import Story from "./Story";
-import stories from "../data/stories"
+import stories from "../../../data/stories"
 
 export default function Stories() {
     return (
